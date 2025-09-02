@@ -75,8 +75,10 @@ TEMPLATES = [
 
 # Dev: autoriser le port Vite
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+    "http://localhost:5173",                  # dev
+    "https://deploiement-frontend.vercel.app" # prod
 ]
+
 
 # Demo: API publique sans auth/CSRF
 REST_FRAMEWORK = {
