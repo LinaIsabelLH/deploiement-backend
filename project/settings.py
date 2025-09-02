@@ -26,7 +26,9 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    "deploiement-backend-uur0.onrender.com"
+    ]
 
 
 # Application definition
@@ -76,7 +78,7 @@ TEMPLATES = [
 # Dev: autoriser le port Vite
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",                  # dev
-    "https://deploiement-frontend.vercel.app" # prod
+    "https://deploiement-frontend-eta.vercel.app" # prod
 ]
 
 
